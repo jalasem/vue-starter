@@ -4,7 +4,10 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
+import '@/scss/main.scss'
+
 Vue.config.productionTip = false
+Vue.prototype.$eventBus = new Vue()
 
 new Vue({
   router,
